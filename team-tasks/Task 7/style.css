@@ -1,0 +1,219 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+.topnav a.right {
+  float: right;
+}
+.center {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  float: center;
+  color: black;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:rgb(77, 182, 243);
+  
+}
+.container .box {
+  position: relative;
+  width: 280px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container .box .icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+
+.container .box:nth-child(1) .icon {
+  background-color: yellowgreen;
+}
+
+/* image clip path part*/
+.container .box:nth-child(1) .icon img,
+.container .box:nth-child(2) .icon img,
+.container .box:nth-child(3) .icon img,
+.container .box:nth-child(4) .icon img,
+.container .box:nth-child(5) .icon img {
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* image clip path part*/
+.container .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px yellowgreen;
+}
+
+.container .box:nth-child(2) .icon {
+  background-color: SlateBlue;
+}
+.container .box:nth-child(2):hover .icon {
+  box-shadow: 0 0 0 400px SlateBlue;
+}
+
+.container .box:nth-child(3) .icon {
+  background-color: Tomato;
+}
+.container .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 400px Tomato;
+}
+
+.container .box:nth-child(4) .icon {
+  background-color: purple;
+}
+.container .box:nth-child(4):hover .icon {
+  box-shadow: 0 0 0 400px purple;
+}
+
+.container .box:nth-child(5) .icon {
+  background-color: MediumSeaGreen;
+}
+.container .box:nth-child(5):hover .icon {
+  box-shadow: 0 0 0 400px MediumSeaGreen;
+}
+.container .box .content {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+p {
+  font-size: 15px;
+}
+h2 {
+  font-size: 20px;
+}
+a{
+  font-size: 15px;
+}
+
+h3{
+  text-align: center;
+margin-top: 25px;}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse:separate;
+  border:solid black 3px;
+  border-radius:6px;
+  -moz-border-radius:6px;
+}
+
+td, th {
+  padding: 5px;
+  border-left:solid black 1px;
+  border-top:solid black 1px;
+}
+
+th {
+  padding: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(77, 182, 243);
+  border-top: none;
+}
+
+td:first-child, th:first-child {
+   border-left: none;
+}
+
+header{
+  font-size: 18px;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 15px;
+}
+
+input[type=text]{
+  text-align: center;
+  width: 70%;
+  border: 2px solid rgb(8, 8, 8);
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  position: relative;
+  transition: 3s;
+  font-size: 25px;
+  background: linear-gradient(21deg, #c2cbcc);
+  padding: 3px;
+  display: inline-block;
+  border-radius: 9999em;
+}
+
+input[type=text]:focus{
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+/* output */
+.display{
+  font-size: medium;
+  color: black;
+  font-size: 21px;
+  margin-left: 32%;
+}
+
+/* execute button */
+.bb{
+  width: 14%;
+  margin-left: 28%;
+  position: relative;
+  align-self: center;
+  box-sizing: border-box;
+  border: 2px solid rgb(8, 8, 8);
+  
+  font-size: 15px;
+  padding: 10px;
+  background-color: hsl(0, 16%, 86%);
+}
+
+.ip{
+  position: relative;
+  margin-left: 25%;
+}
+
+.tab{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: black;
+}
